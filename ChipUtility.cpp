@@ -6,11 +6,11 @@ ChipUtility::ChipUtility()
 	numLeds = 0;
 }
 
-ChipUtility::initChips(int numChips)
+void ChipUtility::initChips(int numChips)
 {
 	for (int i = 0; i < numChips; i++)
 	{
-		mcp23017Setup(100 + (i * 100), 0x20 + (i * 16)); // change to correct address
+		mcp23017Setup(100 + (i * 100), 0x21 + (i * 16)); // change to correct address
 	}
 
 	for (int i = 0; i < numChips * 16; i++)
@@ -21,7 +21,7 @@ ChipUtility::initChips(int numChips)
 	numLeds = numChips * 16;
 }
 
-ChipUtility::triggerLED(int ledNum, bool enable)
+void ChipUtility::triggerLED(int ledNum, bool enable)
 {
 	if (ledNum > 0 && ledNum < numLeds)
 	{

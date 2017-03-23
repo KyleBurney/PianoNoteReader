@@ -10,7 +10,7 @@ using namespace cv;
 int main(){
 	ChipUtility chip;
 
-	chip.initChips(4); // using 4 chips
+	chip.initChips(1); // using 4 chips
 	chip.triggerLED(0, true);
   	printf ("Raspberry Pi - MCP23017 Test\n") ;
 
