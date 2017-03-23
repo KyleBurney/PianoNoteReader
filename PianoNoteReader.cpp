@@ -1,7 +1,6 @@
 #include <iostream>
 #include <stdio.h>
-#include <wiringPi.h>
-#include <mcp23017.h>
+#include "ChipUtility.h"
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
@@ -9,18 +8,16 @@ using namespace std;
 using namespace cv;
 
 int main(){
-	int i, bit ;
+	ChipUtility chip;
 
-  	wiringPiSetup () ;
-  	mcp23017Setup (100, 0x20) ;
-	
+	chip.initChips(4); // using 4 chips
+	chip.triggerLED(0, true);
   	printf ("Raspberry Pi - MCP23017 Test\n") ;
-	cout << "Hello world" << endl;
-	
+
 	// for testing OpenCV
 	system("raspistill -o image.jpg");
-        Mat image = imread("image.jpg");
-        imwrite("output.jpg", image);
+    Mat image = imread("image.jpg");
+    imwrite("output.jpg", image);
 
 	return 0;
 }
