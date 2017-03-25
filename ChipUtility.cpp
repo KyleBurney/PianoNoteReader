@@ -8,10 +8,10 @@ ChipUtility::ChipUtility()
 
 void ChipUtility::initChips(int numChips)
 {
-	for (int i = 0; i < numChips; i++)
-	{
-		mcp23017Setup(100 + (i * 100), 0x21 + (i * 16)); // change to correct address
-	}
+	mcp23017Setup(100, 0x20);
+	mcp23017Setup(116, 0x24);
+	mcp23017Setup(132, 0x27);
+	mcp23017Setup(148, 0x22);
 
 	for (int i = 0; i < numChips * 16; i++)
 	{
@@ -35,3 +35,19 @@ void ChipUtility::triggerLED(int ledNum, bool enable)
 		}
 	}
 }
+
+void ChipUtility::triggerAllLED()
+{
+	for(int i = 0; i < 64; i++){
+               	 digitalWrite(100 + i, HIGH);
+        }
+}
+
+
+void ChipUtility::clearAllLED()
+{
+        for(int i = 0; i < 64; i++){
+                 digitalWrite(100 + i, LOW);
+        }
+}
+
