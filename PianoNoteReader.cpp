@@ -28,8 +28,328 @@ int main(){
 	//		MAD WORLD
 	//---------------------------------------
 
-	chips.triggerLED()
+	chips.triggerLED(F2, true);
 
+	chips.triggerLED(Gs3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(Gs3, false);
+
+	chips.triggerLED(C4, true);
+	usleep(1000 * 300);
+	chips.triggerLED(C4, false);
+
+	chips.triggerLED(G3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(G3, false);
+
+	chips.triggerLED(Gs3, true);
+
+	usleep(1000 * 50);
+	chips.triggerLED(F2, false);
+
+	usleep(1000 * 200);
+	chips.triggerLED(Gs3, false);
+
+	chips.triggerLED(F3, true);
+	chips.triggerLED(C3, true);
+	chips.triggerLED(Gs2, true);
+
+	usleep(1000 * 300);
+	chips.triggerLED(F3, false);
+
+	chips.triggerLED(G3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(G3, false);
+
+	chips.triggerLED(Ds3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(Ds3, false);
+
+	chips.triggerLED(D3, true);
+
+	usleep(1000 * 50);
+	chips.triggerLED(C3, false);
+	chips.triggerLED(Gs2, false);
+
+	usleep(1000 * 250);
+
+	chips.triggerLED(As2, true);
+	usleep(1000 * 1000);
+	chips.triggerLED(D3, false);
+	chips.triggerLED(As2, false);
+
+	chips.triggerLED(D3, true);
+	chips.triggerLED(F3, true);
+	usleep(1000 * 1000);
+	chips.triggerLED(D3, false);
+	chips.triggerLED(F3, false);
+
+//------------------------------------------------------
+
+	chips.triggerLED(Gs3, true);
+
+	usleep(1000 * 100);
+
+	chips.triggerLED(F2, true);
+
+	usleep(1000 * 200);
+	chips.triggerLED(Gs3, false);
+
+	chips.triggerLED(C4, true);
+	usleep(1000 * 300);
+	chips.triggerLED(C4, false);
+
+	chips.triggerLED(G3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(G3, false);
+
+	chips.triggerLED(Gs3, true);
+
+	usleep(1000 * 50);
+	chips.triggerLED(F2, false);
+
+	usleep(1000 * 200);
+	chips.triggerLED(Gs3, false);
+
+	chips.triggerLED(F3, true);
+	chips.triggerLED(C3, true);
+	chips.triggerLED(Gs2, true);
+
+	usleep(1000 * 300);
+	chips.triggerLED(F3, false);
+
+	chips.triggerLED(G3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(G3, false);
+
+	chips.triggerLED(Gs3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(Gs3, false);
+
+	chips.triggerLED(Es3, true);
+
+	usleep(1000 * 100);
+
+	chips.triggerLED(C3, false);
+	chips.triggerLED(Gs2, false);
+
+	usleep(1000 * 200);
+	chips.triggerLED(Es2, true);
+	usleep(1000 * 1000);
+	chips.triggerLED(Es2, false);
+
+	chips.triggerLED(D3, true);
+	chips.triggerLED(F3, true);
+	usleep(1000 * 1000);
+	chips.triggerLED(D3, false);
+	chips.triggerLED(F3, false);
+
+	chips.triggerLED(Es3, false);
+
+	//------------------------------------
+
+	chips.triggerLED(F2, true);
+	usleep(1000 * 500);
+
+	chips.triggerLED(F3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(F3, false);
+
+	usleep(1000 * 50);
+
+	chips.triggerLED(F2, false);
+
+	chips.triggerLED(F3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(F3, false);
+
+	chips.triggerLED(Gs3, true);
+	chips.triggerLED(C3, true);
+	chips.triggerLED(Gs2, true);
+
+	usleep(1000 * 300);
+	chips.triggerLED(Gs3, false);
+	usleep(1000 * 50);
+	chips.triggerLED(Gs3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(Gs3, false);
+
+	chips.triggerLED(F3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(F3, false);
+
+	usleep(1000 * 50);
+	chips.triggerLED(C3, false);
+	chips.triggerLED(Gs2, false);
+
+	chips.triggerLED(F3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(F3, false);
+
+	chips.triggerLED(Gs2, true);
+
+	chips.triggerLED(C4, true);
+	usleep(1000 * 300);
+	chips.triggerLED(C4, false);
+	usleep(1000 * 50);
+	
+	chips.triggerLED(C4, true);
+	usleep(1000 * 600);
+	chips.triggerLED(C4, false);
+
+	usleep(1000 * 150);
+
+	chips.triggerLED(Gs2, false);
+
+	chips.triggerLED(C4, true);
+	usleep(1000 * 300);
+	chips.triggerLED(C3, true);
+	chips.triggerLED(Ds3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(C4, false);
+
+	chips.triggerLED(Gs3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(Gs3, false);
+	chips.triggerLED(C3, false);
+	chips.triggerLED(Ds3, false);
+
+	chips.triggerLED(As3, true);
+	chips.triggerLED(Ds2, true);
+
+	usleep(1000 * 300);
+	chips.triggerLED(As3, false);
+
+	usleep(1000 * 50);
+
+	chips.triggerLED(As3, true);
+	usleep(1000 * 500);
+	chips.triggerLED(As3, false);
+										// 20 seconds
+	usleep(1000 * 150);
+	chips.triggerLED(As3, true);
+	chips.triggerLED(Ds2, false);
+
+	usleep(1000 * 200);
+	chips.triggerLED(As2, true);
+	chips.triggerLED(G2, true);
+
+	usleep(1000 * 300);
+	chips.triggerLED(As3, false);
+
+	chips.triggerLED(G3, true);
+	usleep(1000 * 600);
+	chips.triggerLED(G3, false);
+	chips.triggerLED(As2, false);
+	chips.triggerLED(G2, false);
+
+	usleep(1000 * 100);
+
+	chips.triggerLED(As2, true);
+
+	chips.triggerLED(As3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(As3, false);
+	usleep(1000 * 50);
+
+	chips.triggerLED(As3, true);
+	usleep(1000 * 600);
+	chips.triggerLED(As3, false);
+
+	usleep(1000 * 150);
+
+	chips.triggerLED(As2, false);
+	chips.triggerLED(As3, true);
+
+	usleep(1000 * 300);
+
+	chips.triggerLED(D3, true);
+	chips.triggerLED(F3, true);
+
+	usleep(1000 * 300);
+
+	chips.triggerLED(As3, false);
+
+	chips.triggerLED(Es3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(Es3, false);
+
+	chips.triggerLED(D3, false);
+	chips.triggerLED(F3, false);
+
+	chips.triggerLED(G3, true);
+	usleep(1000 * 600);
+	chips.triggerLED(G3, false);
+
+	chips.triggerLED(F3, true);
+	usleep(1000 * 400);
+	
+	chips.triggerLED(F2, true);
+
+	usleep(1000 * 600);
+	chips.triggerLED(F3, false);
+	usleep(1000 * 150);
+	chips.triggerLED(F3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(F3, false);
+	chips.triggerLED(F3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(F3, false);
+	chips.triggerLED(F2, false);
+								// 27 seconds
+	chips.triggerLED(Gs2, true);
+	chips.triggerLED(C3, true);
+
+	chips.triggerLED(Gs3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(Gs3, false);
+
+	usleep(1000 * 50);
+
+	chips.triggerLED(Gs3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(Gs3, false);
+
+	chips.triggerLED(F3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(F3, false);
+
+	usleep(1000 * 50);
+
+	chips.triggerLED(Gs2, false);
+	chips.triggerLED(C3, false);
+
+	chips.triggerLED(F3, true);
+	usleep(1000 * 300);
+	chips.triggerLED(F3, false);
+
+	chips.triggerLED(Gs2, true);
+
+	chips.triggerLED(C4, true);
+	usleep(1000 * 300);
+	chips.triggerLED(C4, false);
+	usleep(1000 * 50);
+	chips.triggerLED(C4, true);
+	usleep(1000 * 600);
+	chips.triggerLED(C4, false);
+	usleep(1000 * 150);
+
+	chips.triggerLED(Gs2, false);
+	chips.triggerLED(C4, true);
+	usleep(1000 * 300);
+
+	chips.triggerLED(C3, true);
+	chips.triggerLED(Ds3, true);
+
+	usleep(1000 * 300);
+	chips.triggerLED(C4, false);
+									// 30 seconds
+	chips.triggerLED(Gs3, true);
+	usleep(1000 * 600);
+	chips.triggerLED(Gs3, false);
+
+	chips.triggerLED(C3, false);
+	chips.triggerLED(Ds3, false);
 
 	return 0;
 }
