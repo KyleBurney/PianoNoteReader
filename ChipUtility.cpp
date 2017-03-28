@@ -4,18 +4,20 @@ ChipUtility::ChipUtility()
 {
 	wiringPiSetup();
 	numLeds = 0;
+	baseNumber = 100;
+	pinsOnChip = 16;
 }
 
 void ChipUtility::initChips(int numChips)
 {
-	mcp23017Setup(100, 0x20);
-	mcp23017Setup(116, 0x24);
-	mcp23017Setup(132, 0x27);
-	mcp23017Setup(148, 0x22);
+	mcp23017Setup(baseNumber, 0x20);
+	mcp23017Setup(baseNumber + pinsOnChip, 0x24);
+	mcp23017Setup(baseNumber + (pinsOnChip * 2), 0x27);
+	mcp23017Setup(baseNumber + (pinsOnChip * 3), 0x22);
 
-	for (int i = 0; i < numChips * 16; i++)
+	for (int i = 0; i < numChips * pinsOnChip; i++)
 	{
-		pinMode(100 + i, OUTPUT);
+		pinMode(baseNumber + i, OUTPUT);
 	}
 
 	numLeds = numChips * 16;
@@ -27,27 +29,29 @@ void ChipUtility::triggerLED(int ledNum, bool enable)
 	{
 		if (enable)
 		{
-			digitalWrite(100 + ledNum, HIGH);
+			digitalWrite(baseNumber + ledNum, HIGH);
 		}
 		else
 		{
-			digitalWrite(100 + ledNum, LOW);
+			digitalWrite(baseNumber + ledNum, LOW);
 		}
 	}
-}
+} 
 
 void ChipUtility::triggerAllLED()
 {
-	for(int i = 0; i < 64; i++){
-               	 digitalWrite(100 + i, HIGH);
+	for(int i = 0; i < numLeds; i++){
+               	 digitalWrite(baseNumber + i, HIGH);
+				 usleep(mic2mil * 500);
+				 digitalWrite(baseNumber + i, LOW);
         }
 }
 
 
 void ChipUtility::clearAllLED()
 {
-        for(int i = 0; i < 64; i++){
-                 digitalWrite(100 + i, LOW);
+        for(int i = 0; i < numLeds; i++){
+                 digitalWrite(baseNumber + i, LOW);
         }
 }
 
